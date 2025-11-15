@@ -116,7 +116,7 @@ transform: translateY(-50%);
   flex-wrap: wrap;
   padding: 30px 5%;
   gap: 90px;
-  background: url(/ảnh/nhạc-màu-hồng-và-trắng-được-hiển-thị-trên-nền-hồng_987701-3694.avif) no-repeat center center;
+  background: url(nen.avif) no-repeat center center;
   background-size: cover;
 }
 
@@ -475,5 +475,6 @@ button.normal:hover {
         gap: 25px;
     }
 }
+
 
 
