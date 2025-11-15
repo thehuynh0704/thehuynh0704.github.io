@@ -1,0 +1,479 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  height: 70px;
+  align-items: center;
+  margin: 0 50px 0 50px;
+}
+.logo{
+  flex: 1;
+}
+.menu{
+  display: flex;
+  flex: 2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.menu li{
+  padding: 0 20px;
+}
+.menu li:hover .sub-menu{
+ visibility: visible;
+ top: 30px;
+}
+.menu li :hover {
+  color: #C0C0C0;
+}
+.sub-menu{
+  position: absolute;
+  width: 100px;
+  border: 1px solid pink;
+  padding: 10px 0 10px 15px;
+  visibility: hidden;
+  top: 50px;
+  transition: 0.3s;
+  margin-top: 10px;
+  background-color: pink;
+}
+.sub-menu li:hover a{
+  color: #f999de;
+}
+.sub-menu li{
+  padding: 5px;
+}
+.menu li a{
+  display: block;
+  line-height: 20px;
+}
+.other{
+  display: flex;
+  flex: 2;
+  padding: 0 12px;
+   justify-content: space-between;
+}
+.other li :hover{
+  color: #C0C0C0;
+}
+.other li{
+  padding: 0 20px;
+}
+.other li i{
+  padding: 25px;
+   top: 10px;
+right: 2px;
+transform: translateY(-50%);
+}
+.other li:first-child{
+  position: relative;
+}
+.other li:first-child input{
+  width: 100%;
+   border: none;
+  border-bottom: 1px solid #333;
+}
+.other li:first-child i{
+  position: absolute;
+  right:10px ;
+}
+.container{
+  background-color: #333;
+  width: 1515px;
+  height: 500px;
+ margin: 10px;
+}
+.kieu1{
+  padding: 30px;
+  text-align: center;
+  color: #f999de;
+  font-family: 'Coiny', cursive !important;
+  font-size: 30px;
+}
+.gia{
+  font-family: arial !important;
+}
+/* --- CĂN GIỮA TOÀN TRANG --- */
+.container {
+  text-align: center;
+}
+
+/* --- KHỐI CHỨA TOÀN BỘ SẢN PHẨM --- */
+.sanpham {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 5%;
+  gap: 90px;
+  background: url(/ảnh/nhạc-màu-hồng-và-trắng-được-hiển-thị-trên-nền-hồng_987701-3694.avif) no-repeat center center;
+  background-size: cover;
+}
+
+/* --- KHỐI TỪNG SẢN PHẨM --- */
+.sanpham .sp {
+  width: 260px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  background: #fff;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* --- HIỆU ỨNG ĐỔ BÓNG KHI HOVER --- */
+.sanpham .sp:hover {
+  box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
+}
+
+/* --- PHẦN ẢNH --- */
+.sanpham .sp .img-box {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+/* ẢNH SẢN PHẨM */
+.sanpham .sp .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+/* --- CHỮ HIỆN KHI HOVER --- */
+.sanpham .sp .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+/* --- HIỆU ỨNG KHI HOVER ẢNH --- */
+.sanpham .sp .img-box:hover .overlay {
+  opacity: 1;
+}
+
+.sanpham .sp .img-box:hover img {
+  transform: scale(1.1);
+}
+
+/* --- PHẦN MÔ TẢ BÊN DƯỚI --- */
+.sanpham .sp .des {
+  text-align: left;
+  padding: 15px 10px 20px 10px;
+}
+
+.sanpham .sp .des span {
+  font-size: 14px;
+  color: #666;
+}
+
+.sanpham .sp .des h3 {
+  font-size: 18px;
+  color: plum;
+  margin: 5px 0;
+}
+
+/* --- SAO ĐÁNH GIÁ --- */
+.sanpham .sp .des .star i {
+  font-size: 14px;
+  color: rgb(243, 181, 25);
+  margin-right: 2px;
+}
+
+/* --- GIÁ TIỀN --- */
+.sanpham .sp .des h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #eb5542;
+  margin-top: 8px;
+}
+
+.sanpham .sp .des .gia {
+  font-weight: normal;
+  color: #333;
+}
+
+#anh{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(/ảnh/360_F_492065380_eSlHdkdNBy6ArNkk5gV0Lme1qhvTosSI.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 1260px;
+}
+#anh h4{
+  color: #fff;
+  font-size: 50px;
+}
+#anh h2{
+  color: #fff;
+  font-size: 90px;
+  padding: 10px 0;
+}
+#anh h2 span{
+  color: #ef3636;
+}
+#anh button{
+  font-size: 30px;
+  padding: 20px;
+}
+#anh button :hover{
+  background: #088178;
+  color: #fff;
+}
+.sanpham .des i{
+  font-size: 12px;
+  color: rgba(243, 181, 25);
+}
+.sanpham .des h4{
+  color: #eb5542;
+}
+#newsletter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(/ảnh/nhạc-màu-hồng-và-trắng-được-hiển-thị-trên-nền-hồng_987701-3694.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 30%;
+  padding: 25px;
+  margin-top: 40px;
+}
+#newsletter h4{
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+#newsletter p{
+  font-size: 14px;
+  font-weight: 600;
+  color: #818ea0;
+}
+#newsletter p span{
+  color: yellow;
+}
+#newsletter .form{
+  display: flex;
+  width: 30%;
+  gap: 10px;
+}
+#newsletter input{
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+}
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+button.normal:hover {
+    background-color: #088178;  /* màu vàng nhấn */
+    color: #fff;                /* đổi chữ trắng */
+    transform: translateY(-2px);
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer p {
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: #ccc;
+  font-size: 1.5rem;
+  margin-right: 12px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0d6efd; /* màu xanh kiểu Bootstrap */
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+/* ===================== RESPONSIVE MOBILE ===================== */
+@media (max-width: 768px) {
+
+    /* Header xếp cột cho gọn */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 120px !important;
+        height: auto;
+    }
+
+    /* Menu chuyển thành dạng cột */
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .menu li a {
+        font-size: 16px;
+    }
+
+    /* Other (tìm kiếm + giỏ) */
+    .other {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .other li input {
+        width: 220px;
+    }
+
+    /* Banner */
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Sản phẩm – 1 cột */
+    .sanpham {
+        padding: 0 10px;
+        justify-content: center;
+    }
+
+    .sp {
+        width: 100% !important;
+        margin: 10px 0;
+    }
+
+    .img-box {
+        height: 230px !important;
+    }
+
+    /* Chữ tiêu đề */
+    .kieu1 h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    /* Section giảm giá */
+    #anh h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #anh button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    /* Newsletter – đăng ký email */
+    #newsletter {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    #newsletter input {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+}
+
+

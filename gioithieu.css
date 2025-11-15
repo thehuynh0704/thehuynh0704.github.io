@@ -1,0 +1,116 @@
+/* ================= BANNER GIỚI THIỆU ================= */
+.about-banner {
+    width: 100%;
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    color: #fff;
+}
+
+.about-banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.about-banner p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* ================= SECTION GIỚI THIỆU CHÍNH ================= */
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    padding: 60px 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    flex: 1;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: #eb5542;
+}
+
+.about-content h3 {
+    margin-top: 25px;
+    font-size: 24px;
+    color: #d96e7b;
+}
+
+.about-content p {
+    margin-top: 10px;
+    line-height: 1.7;
+    font-size: 18px;
+    color: #333;
+}
+
+/* ================= GIÁ TRỊ CỐT LÕI ================= */
+.about-content ul {
+    margin-top: 15px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-content ul li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-content ul li i {
+    color: #eb5542;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* ================= TẦM NHÌN ================= */
+.about-vision {
+    text-align: center;
+    padding: 60px 20px;
+    background: #ffe6ea;
+}
+
+.about-vision h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #eb5542;
+}
+
+.about-vision p {
+    max-width: 900px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img img {
+        max-width: 80%;
+        margin: auto;
+    }
+}
