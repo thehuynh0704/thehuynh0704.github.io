@@ -224,7 +224,7 @@ transform: translateY(-50%);
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(/ảnh/360_F_492065380_eSlHdkdNBy6ArNkk5gV0Lme1qhvTosSI.jpg);
+  background-image: url(bannerphu.jpg);
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -263,7 +263,7 @@ transform: translateY(-50%);
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url(/ảnh/nhạc-màu-hồng-và-trắng-được-hiển-thị-trên-nền-hồng_987701-3694.avif);
+  background-image: url(nhạc-màu-hồng-và-trắng-được-hiển-thị-trên-nền-hồng_987701-3694.avif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 20% 30%;
@@ -475,6 +475,7 @@ button.normal:hover {
         gap: 25px;
     }
 }
+
 
 
 
